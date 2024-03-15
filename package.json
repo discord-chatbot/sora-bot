@@ -1,0 +1,26 @@
+{
+  "name": "sora-bot",
+  "version": "1.0.0",
+  "description": "마법의 소라고동님이 질문에 답변해주는 디스코드 봇입니다. 소라고동 또는 소라고둥 채널에서만 사용 가능합니다.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js --dev",
+    "start": "pm2 start ecosystem.config.js --only sora-bot --env production",
+    "del": "pm2 del all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffwe/sora-bot.git"
+  },
+  "keywords": ["discord", "bot", "sora", "sora-bot"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffwe/sora-bot/issues"
+  },
+  "homepage": "https://github.com/ffwe/sora-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
